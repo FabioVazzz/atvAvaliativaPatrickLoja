@@ -23,13 +23,27 @@ public class PrincipalLoja {
             scan.nextLine(); // limpa o ENTER
 
             switch (opcao) {
-                case 1 -> Loja.cadastrarProduto();
-                case 2 -> Loja.listarProdutos();
-                case 3 -> Loja.realizarVenda();
-                case 4 -> Loja.mostrarCaixa();
-                case 5 -> menuCarrinho();
-                case 0 -> System.out.println("Encerrando o sistema!");
-                default -> System.out.println("Opção inválida.");
+                case 1: 
+                	Loja.cadastrarProduto();
+                	break;
+                case 2: 
+                	Loja.listarProdutos();
+                	break;
+                case 3: 
+                	Loja.realizarVenda();
+                	break;
+                case 4:
+                	Loja.mostrarCaixa();
+                	break;
+                case 5:
+                	menuCarrinho();
+                	break;
+                case 0:
+                	System.out.println("Encerrando o sistema!");
+                	break;
+                default:
+                	System.out.println("Opção inválida.");
+                	break;
             }
         } while (opcao != 0);
 
@@ -51,12 +65,24 @@ public class PrincipalLoja {
             scan.nextLine();
 
             switch (op) {
-                case 1 -> Loja.adicionarAoCarrinho();
-                case 2 -> Loja.removerProdutoCarrinho();
-                case 3 -> Loja.mostrarCarrinho();
-                case 4 -> Loja.finalizarCompra();
-                case 0 -> System.out.println("Voltando ao menu principal...");
-                default -> System.out.println("Opção inválida!");
+                case 1:
+                	Loja.adicionarAoCarrinho();
+                	break;
+                case 2:
+                	Loja.removerProdutoCarrinho();
+                	break;
+                case 3:
+                	Loja.mostrarCarrinho();
+                	break;
+                case 4:
+                	Loja.finalizarCompra();
+                	break;
+                case 0:
+                	System.out.println("Voltando ao menu principal...");
+                	break;
+                default:
+                	System.out.println("Opção inválida!");
+                	break;
             }
         } while (op != 0);
     }
