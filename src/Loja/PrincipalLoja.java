@@ -20,7 +20,7 @@ public class PrincipalLoja {
             System.out.print("Escolha uma opção: ");
 
             opcao = scan.nextInt();
-            scan.nextLine(); // limpa o ENTER
+            scan.nextLine(); 
 
             switch (opcao) {
                 case 1: 

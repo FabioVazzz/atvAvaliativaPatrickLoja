@@ -98,7 +98,6 @@ public class Loja {
         }
     }
 
-    // ====== MÉTODOS DO CARRINHO ======
 
     public static void adicionarAoCarrinho() {
         if (produtos.isEmpty()) {
@@ -217,7 +216,6 @@ public class Loja {
         }
     }
 
-    // ====== CAIXA ======
     public static void mostrarCaixa() {
         caixa.mostrarCaixa();
     }
